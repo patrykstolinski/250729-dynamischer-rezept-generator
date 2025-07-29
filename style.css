@@ -1,0 +1,121 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #f5e0ec, #e0f7fa);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #333;
+    text-align: center;
+    text-shadow: 5px 5px 5px #ffffff;
+}
+
+#recipeContainer {
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 16px 20px;
+    width: 50vw;
+    max-width: 90vw;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    transition: box-shadow 0.3s ease;
+}
+
+#recipeContainer:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);    
+}
+
+#recipeList {
+    list-style: decimal;
+    padding-left: 20px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+#recipeList li {
+    background-color: #fefefe;
+    padding: 8px 12px;
+    margin-bottom: 6px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#recipeList li:hover {
+    background-color: #fce4ec;
+    transform: scale(1.02);
+}
+
+#recipeList li.highlight-ingredient {
+    font-weight: bold;
+    color: #d81b60;
+    background: linear-gradient(90deg, #f8bbd0, #f48fb1);
+    border-left: 4px solid #d81b60;
+    animation: pulseHighlight 1s ease-in-out infinite alternate;
+}
+
+@keyframes pulseHighlight {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.02);
+  }
+}
+
+button {
+    padding: 12px 20px;
+    display:block;
+    margin: auto;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #e91e63, #ff4081);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+#message {
+    background: linear-gradient(to right, #ff80ab, #ff4081);
+    color: #fff;
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin-top: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 50vw;
+    max-width: 90vw;
+}
+
+#message::before {
+    content:"💡";
+    font-size: 1.5rem;
+}
+#message p {
+    margin: 0;
+}
+
