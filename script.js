@@ -110,7 +110,6 @@ selectedRecipe.ingredients.forEach(ingredient => {
         // add a class highlight to classList, log to console
         listEntry.classList.add("highlight-ingredient");
         console.log(`Ingredient highlighted: ${ingredient}`);
-
         }
     // append the ingredient to recipeList
     recipeList.appendChild(listEntry);
