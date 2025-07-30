@@ -23,8 +23,8 @@ h1, h2, h3 {
     backdrop-filter: blur(10px);
     border-radius: 15px;
     padding: 16px 20px;
-    width: 50vw;
-    max-width: 90vw;
+    width: 30vw;
+    max-width: 30vw;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     margin-top: 30px;
     transition: box-shadow 0.3s ease;
@@ -107,8 +107,8 @@ button:active {
     display: flex;
     align-items: center;
     gap: 10px;
-    width: 50vw;
-    max-width: 90vw;
+    width: 30vw;
+    max-width: 30vw;
 }
 
 #message::before {
